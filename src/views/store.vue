@@ -1,7 +1,5 @@
 <template>
     <div>
-       <a-input v-model="inputValue"></a-input>
-       <a-show :content="inputValue"></a-show>
        <p>{{ appName }}</p>
        <p>{{ userName }}</p>
        <p>{{appNameWithVersion}}</p>
@@ -14,8 +12,6 @@
     </div>
 </template>
 <script>
-import AInput from '_c/AInput.vue'
-import AShow from '_c/AShow.vue'
 import { mapState, mapGetters, mapMutations } from 'vuex'
 export default {
     name: 'Store',
@@ -51,10 +47,6 @@ export default {
         // userName () {
         //     return this.$store.state.user.userName
         // }
-    },
-    components: {
-        AInput,
-        AShow
     },
     data () {
         return {
